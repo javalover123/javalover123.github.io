@@ -34,7 +34,7 @@ jobs:
           ALGOLIA_APP_ID: 4O2Y44OA2O
           ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
           ALGOLIA_INDEX_NAME: "index.en"
-          ALGOLIA_INDEX_FILE: "./docs/public/index.json"
+          ALGOLIA_INDEX_FILE: "./public/index.json"
         run: |
           npm run algolia
 
@@ -43,6 +43,6 @@ jobs:
           ALGOLIA_APP_ID: 4O2Y44OA2O
           ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
           ALGOLIA_INDEX_NAME: "index.zh-cn"
-          ALGOLIA_INDEX_FILE: "./docs/public/zh-cn/index.json"
+          ALGOLIA_INDEX_FILE: "./public/zh-cn/index.json"
         run: |
           npm run algolia
