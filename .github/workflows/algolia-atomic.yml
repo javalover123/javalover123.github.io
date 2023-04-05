@@ -24,7 +24,8 @@ jobs:
 
       - name: Build
         run: |
-          hugo -v --gc --minify
+          npm install
+          npm run build
 
       - name: Update Algolia Index (en)
         env:
@@ -33,7 +34,7 @@ jobs:
           ALGOLIA_INDEX_NAME: "index.en"
           ALGOLIA_INDEX_FILE: "./public/index.json"
         run: |
-          atomic-algolia
+          npm run algolia
 
       - name: Update Algolia Index (zh-cn)
         env:
@@ -42,4 +43,4 @@ jobs:
           ALGOLIA_INDEX_NAME: "index.zh-cn"
           ALGOLIA_INDEX_FILE: "./public/zh-cn/index.json"
         run: |
-          atomic-algolia
+          npm run algolia
