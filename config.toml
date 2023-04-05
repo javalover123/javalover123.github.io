@@ -1,7 +1,7 @@
-baseURL = "https://fixit.lruihao.cn"
+baseURL = "https://www.890808.xyz"
 # [en, zh-cn, fr, pl, ...] determines default content language
 # [en, zh-cn, fr, pl, ...] 设置默认的语言
-defaultContentLanguage = "en"
+defaultContentLanguage = "zh-cn"
 # theme
 # 主题
 theme = "FixIt"
@@ -1006,7 +1006,7 @@ enableEmoji = true
       # Publisher info
       # 出版者信息
       [params.page.seo.publisher]
-        name = "Lruihao"
+        name = "javalover123"
         logoUrl = "/images/avatar.png"
 
   # TypeIt config
@@ -1241,9 +1241,9 @@ enableEmoji = true
 # Author config
 # 作者配置
 [author]
-  name = "Lruihao"
-  email = "1024@lruihao.cn"
-  link = "https://lruihao.cn"
+  name = "javalover123"
+  email = "javalover123@foxmail.com"
+  link = "https://www.890808.xyz"
 
 # Sitemap config
 # 网站地图配置
