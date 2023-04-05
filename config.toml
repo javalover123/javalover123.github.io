@@ -259,8 +259,8 @@ enableEmoji = true
         QQ = ""
         QQGroup = "" # https://qun.qq.com/join.html
         Diaspora = ""
-        CSDN = ""
-        Email = "xxxx@xxxx.com"
+        CSDN = "https://blog.csdn.net/javalover123888"
+        Email = "javalover123@foxmail.com"
         RSS = true # since v0.2.0
         [languages.en.params.social.Mastodon]
           id = "@xxxx"
@@ -491,8 +491,8 @@ enableEmoji = true
         QQ = ""
         QQGroup = "awbwdTtSQ_-H5QGzeJxdWgv6JMbNehNM" # https://qun.qq.com/join.html
         Diaspora = ""
-        CSDN = ""
-        Email = "xxxx@xxxx.com"
+        CSDN = "javalover123888"
+        Email = "javalover123@foxmail.com"
         RSS = true # since v0.2.0
       # 盘古之白配置 since v0.2.12
       [languages.zh-cn.params.pangu]
