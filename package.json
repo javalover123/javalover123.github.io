@@ -15,7 +15,7 @@
   },
   "scripts": {
     "babel": "npx babel src/js/theme.js -o assets/js/theme.min.js -s",
-    "build": "npm run babel && hugo -v --gc --minify",
+    "build": "hugo -v --gc --minify",
     "build:lunr.segmentit": "browserify src/lib/lunr.segmentit.js -o assets/lib/lunr/lunr.segmentit.js -t babelify --presets @babel/preset-env --presets minify",
     "server": "hugo server -D --disableFastRender --navigateToChanged --ignoreCache --bind 0.0.0.0",
     "server:production": "npm run server -- -e production",
