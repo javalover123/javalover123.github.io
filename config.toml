@@ -129,7 +129,7 @@ enableEmoji = true
         pre = "<i class='fa-brands fa-github fa-fw' aria-hidden='true'></i>"
         post = ""
         name = ""
-        url = "https://github.com/hugo-fixit/FixIt"
+        url = "https://github.com/javalover123"
         title = "GitHub"
         weight = 8
         [languages.en.menu.main.params]
@@ -189,7 +189,7 @@ enableEmoji = true
           paginate = 6
       # Social config in home page
       [languages.en.params.social]
-        GitHub = "xxxx"
+        GitHub = "javalover123"
         Linkedin = ""
         Twitter = "xxxx"
         Instagram = "xxxx"
@@ -420,7 +420,7 @@ enableEmoji = true
           paginate = 6
       # 主页的社交信息设置
       [languages.zh-cn.params.social]
-        GitHub = "xxxx"
+        GitHub = "javalover123"
         Linkedin = ""
         Twitter = ""
         Instagram = ""
