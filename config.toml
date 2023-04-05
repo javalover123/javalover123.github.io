@@ -175,7 +175,7 @@ enableEmoji = true
           # title shown in home page (HTML format is supported)
           title = ""
           # subtitle shown in home page
-          subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+          subtitle = "javalover123's blog, about Java"
           # whether to use typeit animation for subtitle
           typeit = true
           # whether to show social links
@@ -263,8 +263,8 @@ enableEmoji = true
         Email = "javalover123@foxmail.com"
         RSS = true # since v0.2.0
         [languages.en.params.social.Mastodon]
-          id = "@xxxx"
-          prefix = "https://mastodon.technology/"
+          id = ""
+          prefix = ""
 
   [languages.zh-cn]
     weight = 2
@@ -406,7 +406,7 @@ enableEmoji = true
           # 主页显示的网站标题 (支持 HTML 格式)
           title = ""
           # 主页显示的网站副标题
-          subtitle = "一个简洁、优雅且高效的 Hugo 主题"
+          subtitle = "能力还行的准大龄攻城狮，了解 Java，跑半马、全马试试么?"
           # 是否为副标题显示打字机动画
           typeit = true
           # 是否显示社交账号
@@ -489,7 +489,7 @@ enableEmoji = true
         BuyMeaCoffee = ""
         Linktree = ""
         QQ = ""
-        QQGroup = "awbwdTtSQ_-H5QGzeJxdWgv6JMbNehNM" # https://qun.qq.com/join.html
+        QQGroup = "" # https://qun.qq.com/join.html
         Diaspora = ""
         CSDN = "javalover123888"
         Email = "javalover123@foxmail.com"
