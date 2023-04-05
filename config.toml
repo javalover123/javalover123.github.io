@@ -11,7 +11,7 @@ themesDir = "themes"
 
 # website title
 # 网站标题
-title = "FixIt"
+title = "javalover123 的博客"
 
 # Ignore errors
 # 忽略错误
@@ -137,9 +137,9 @@ enableEmoji = true
           type = "mobile"
     [languages.en.params]
       # site description
-      description = "About FixIt Theme"
+      description = "javalover123's blog"
       # site keywords
-      keywords = ["FixIt", "Theme", "Hugo"]
+      keywords = ["javalover123", "java", "backend"]
       # Search config
       [languages.en.params.search]
         enable = true
@@ -361,16 +361,16 @@ enableEmoji = true
         pre = "<i class='fa-brands fa-github fa-fw' aria-hidden='true'></i>"
         post = ""
         name = ""
-        url = "https://github.com/hugo-fixit/FixIt"
+        url = "https://github.com/javalover123"
         title = "GitHub"
         weight = 8
         [languages.zh-cn.menu.main.params]
           class = "d-none-desktop text-center"
     [languages.zh-cn.params]
       # 网站描述
-      description = "关于 FixIt 主题"
+      description = "javalover123 的博客"
       # 网站关键词
-      keywords = ["FixIt", "主题", "Hugo"]
+      keywords = ["javalover123", "java", "后端"]
       # 搜索配置
       [languages.zh-cn.params.search]
         enable = true
@@ -503,7 +503,7 @@ enableEmoji = true
       [languages.zh-cn.params.watermark]
         enable = true
         # 水印内容 (允许 HTML 格式)
-        content = '<img class="fixit-icon" src="/images/fixit.svg" alt="FixIt logo" /> FixIt 主题'
+        content = '<img class="fixit-icon" src="/images/fixit.svg" alt="javalover123 的博客" /> javalover123 的博客'
         # 水印透明度
         opacity = 0.0125
         # 单水印高度 单位：px
@@ -511,7 +511,7 @@ enableEmoji = true
       # 在顶部右侧显示 GitHub 开源链接 since v0.2.14
       [languages.zh-cn.params.githubCorner]
         enable = true
-        permalink = "https://github.com/hugo-fixit/FixIt"
+        permalink = "https://github.com/javalover123"
         title = "在 GitHub 上查看源代码"
         position = "right" # left, right
       # Gravatar 设置 since v0.2.14
@@ -529,7 +529,7 @@ enableEmoji = true
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
-  gitRepo = "https://github.com/hugo-fixit/docs"
+  gitRepo = "https://github.com/javalover123/javalover123.github.io"
   # which hash function used for SRI, when empty, no SRI is used ("sha256", "sha384", "sha512", "md5")
   # 哪种哈希函数用来 SRI, 为空时表示不使用 SRI ("sha256", "sha384", "sha512", "md5")
   fingerprint = ""
@@ -556,7 +556,7 @@ enableEmoji = true
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
     # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-    title = "FixIt"
+    title = "javalover123 的博客"
     # whether to omit favicon resource links
     # 是否隐藏网站图标资源链接
     noFavicon = false
@@ -592,7 +592,7 @@ enableEmoji = true
       logo = "/images/fixit.svg"
       # title name
       # 标题名称
-      name = "FixIt"
+      name = "javalover123 的博客"
       # you can add extra information before the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
       pre = ""
@@ -972,10 +972,10 @@ enableEmoji = true
       # Giscus 评论系统设置 (https://giscus.app/) since v0.2.14
       [params.page.comment.giscus]
         enable = true
-        repo = "hugo-fixit/FixIt"
-        repoId = "R_kgDOGihPtQ"
+        repo = "javalover123/javalover123.github.io"
+        repoId = "R_kgDOH6t8zw"
         category = "General"
-        categoryId = "DIC_kwDOGihPtc4CApHX"
+        categoryId = "DIC_kwDOH6t8z84CVjK1"
         mapping = "title"
         term = ""
         reactionsEnabled = "1"
@@ -1049,7 +1049,7 @@ enableEmoji = true
     enable = true
     # watermark's text (HTML format is supported)
     # 水印内容 (允许 HTML 格式)
-    content = '<img class="fixit-icon" src="/images/fixit.svg" alt="FixIt logo" /> FixIt Theme'
+    content = '<img class="fixit-icon" src="/images/fixit.svg" alt="javalover123 的博客" /> javalover123 的博客'
     # watermark's transparency
     # 水印透明度
     opacity = 0.0125
@@ -1174,7 +1174,7 @@ enableEmoji = true
   # 在左上角或者右上角显示 GitHub 开源链接 since v0.2.14
   [params.githubCorner]
     enable = true
-    permalink = "https://github.com/hugo-fixit/FixIt"
+    permalink = "https://github.com/javalover123"
     title = "View source on GitHub"
     position = "right" # left, right
   # Gravatar config since v0.2.14
