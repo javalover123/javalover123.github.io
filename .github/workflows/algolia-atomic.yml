@@ -33,7 +33,7 @@ jobs:
           ALGOLIA_INDEX_NAME: "index.en"
           ALGOLIA_INDEX_FILE: "./public/index.json"
         run: |
-          npm run algolia
+          atomic-algolia
 
       - name: Update Algolia Index (zh-cn)
         env:
@@ -42,4 +42,4 @@ jobs:
           ALGOLIA_INDEX_NAME: "index.zh-cn"
           ALGOLIA_INDEX_FILE: "./public/zh-cn/index.json"
         run: |
-          npm run algolia
+          atomic-algolia
