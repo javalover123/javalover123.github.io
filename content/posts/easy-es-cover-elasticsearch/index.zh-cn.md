@@ -164,6 +164,6 @@ ElasticSearch的Java客户端中，[spring-data-elasticsearch](https://github.co
 
 [easy-es](https://www.easy-es.cn/)，大幅降低开发门槛，减少代码量，支持 自定义排序、权重、原生查询，留下了 广阔的调整空间
 
-本文首发于 https://www.890808.xyz/spring-boot-kafka-send-error-with-fork-join/ ，其他平台需要审核更新慢一些。
+本文首发于 [https://www.890808.xyz/easy-es-cover-elasticsearch/](https://www.890808.xyz/easy-es-cover-elasticsearch/)，其他平台需要审核更新慢一些。
 
 ![javalover123](https://img.890808.xyz/file/javalover123/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)
