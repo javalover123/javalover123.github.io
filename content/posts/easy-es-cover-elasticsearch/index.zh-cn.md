@@ -17,12 +17,10 @@ repost:
   url: "https://www.890808.xyz/zh-cn/easy-es-cover-elasticsearch/"
 ---
 
-ElasticSearch的Java客户端中，spring-data-elasticsearch 简化了 增删改、建索引等，没有简化 复杂查询 编码。easy-es API 类似 Mybatis-Plus，大幅降低开发门槛，减少代码量，支持 自定义排序、权重、原生查询，留下了 广阔的调整空间
-
 <!--more-->
 
 一、前言
-ElasticSearch的Java客户端中，[spring-data-elasticsearch](https://github.com/spring-projects/spring-data-elasticsearch) 简化了 增删改、建索引等，没有简化 复杂查询 编码。[easy-es](https://www.easy-es.cn/pages/ec7460/) API 类似 Mybatis-Plus，大幅降低开发门槛，减少代码量，支持 自定义排序、权重、原生查询，留下了 广阔的调整空间
+ElasticSearch的Java客户端中，[spring-data-elasticsearch](https://github.com/spring-projects/spring-data-elasticsearch) 简化了 增删改、建索引等，没有简化 复杂查询 编码。[easy-es](https://www.easy-es.cn/) API 类似 Mybatis-Plus，大幅降低开发门槛，减少代码量，支持 自定义排序、权重、原生查询，留下了 广阔的调整空间
 
 二、Java客户端
 
@@ -31,11 +29,11 @@ ElasticSearch的Java客户端中，[spring-data-elasticsearch](https://github.co
 - [Java REST Client](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/current/index.html)：7.15 以下版本适用
 - [Elasticsearch Java API Client](https://www.elastic.co/guide/en/elasticsearch/client/java-api-client/current/index.html)：7.16 版本发布测试版，建议es 8.0 以上使用
 - [spring-data-elasticsearch](https://github.com/spring-projects/spring-data-elasticsearch)：简化了 增删改、建索引等，没有简化 复杂查询 编码
-- [easy-es](https://www.easy-es.cn/pages/ec7460/)：API 类似 Mybatis-Plus，大幅降低开发门槛，减少代码量，支持 自定义排序、权重、原生查询，留下了 广阔的调整空间
+- [easy-es](https://www.easy-es.cn/)：API 类似 Mybatis-Plus，大幅降低开发门槛，减少代码量，支持 自定义排序、权重、原生查询，留下了 广阔的调整空间
 
 三、easy-es
 
-1. [MySQL和 easy-es 语法对比 | Easy-Es](https://www.easy-es.cn/pages/6fea40/)
+1. [MySQL和 easy-es 语法对比 | Easy-Es](https://www.easy-es.cn/pages/8f3438/)
    
    | MySQL          | Easy-Es | es-DSL/es java api                        |
    | -------------- | ------- | ----------------------------------------- |
@@ -163,4 +161,8 @@ ElasticSearch的Java客户端中，[spring-data-elasticsearch](https://github.co
 
 四、总结
 
-[easy-es](https://www.easy-es.cn/pages/ec7460/)，大幅降低开发门槛，减少代码量，支持 自定义排序、权重、原生查询，留下了 广阔的调整空间
+[easy-es](https://www.easy-es.cn/)，大幅降低开发门槛，减少代码量，支持 自定义排序、权重、原生查询，留下了 广阔的调整空间
+
+本文首发于 https://www.890808.xyz/spring-boot-kafka-send-error-with-fork-join/ ，其他平台需要审核更新慢一些。
+
+![javalover123](https://img.890808.xyz/file/javalover123/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)
