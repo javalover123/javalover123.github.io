@@ -2,7 +2,7 @@
 title: "轻量级跨平台文本编辑器notepad--"
 date: 2023-04-12T22:15:22+08:00
 draft: false
-description: "支持重启软件自动恢复未保存内容、免费商用、低内存占用 文本编辑器，ndd(notepad--)"
+description: "一款支持重启软件自动恢复未保存内容、免费商用、低内存占用 的文本编辑器，ndd(notepad--)"
 resources:
 - name: "featured-image"
   src: "featured-image.png"
@@ -21,7 +21,7 @@ repost:
 
 ## 一、前言
 - 公司电脑 16G内存，经常使用 90%甚至超过 (IDEA用3到4.5G)
-- [vs code]([Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/)) 占用内存 300M，甚至 450M 左右
+- [vs code](https://code.visualstudio.com/) 占用内存 300M，甚至 450M 左右
 - 免费商用、占用内存低(30M) 的文本编辑器
 - 重启软件，没保存的文件 不用提醒保存，下次打开可以恢复 (很多开源文本编辑器不支持)
 
@@ -36,3 +36,7 @@ repost:
 
 - 基本满足需求，暂时没几个插件
 - 捐赠可获取注册码(不捐赠也可以 免费永久试用，也不会提示购买)，[ndd：notepad--](https://gitee.com/cxasm/notepad--) 页面底部捐赠有记录
+
+本文首先发布于 [https://www.890808.xyz/](https://www.890808.xyz/) ，其他平台需要审核更新慢一些。
+
+![javalover123](https://img.890808.xyz/file/javalover123/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)
