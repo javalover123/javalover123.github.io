@@ -19,26 +19,26 @@ repost:
 
 <!--more-->
 
-# 一、背景
+## 一、背景
 
 - 公司业务分 2个Kafka，我们组一个，其他组公用一个
 - 我们组有2个业务在 Java并行流中发消息到 其他组的Kafka，一个是 批量管理接口(app接口公用底层方法，不是批量的，没有用 并行流)，另一个是 消费我们组Kafka消息然后发送。
 - 使用 spring-boot-maven-plugin 打包，发布到生产环境以后，偶尔会接到 发送消息到其他组Kafka报错告警，Invalid value org.apache.kafka.common.serialization.StringSerializer for configuration key.serializer: Class org.apache.kafka.common.serialization.StringSerializer could not be found.
 
-# 二、临时方案
+## 二、临时方案
 
 1. 查了 测试、开发 环境 最近1个月的日志，没有出现过这个错误
 2. 网上搜索的结果，应该是 类加载器的问题
 3. 本地 IDEA开发工具 启动程序、打包jar运行，访问 app接口，都没有重现
 4. 生产环境第一次以后就正常，并且没有重现的情况下，不敢修改上线，只能先加异常处理
 
-# 三、原因分析
+## 三、原因分析
 
 - 类加载器不一样
 - 使用 spring-boot-maven-plugin 打包出来是 fat jar，其中 BOOT-INF/lib/ 存放依赖jar，BOOT-INF/classes/ 存放项目的 classes，使用spring自定义的 ClassLoader 加载
 - 业务处理使用了parallelStream包括发kafka消息，底层使用ForkJoin线程池，因为是JDK的类，使用BootClassLoader加载，BootClassLoader 加载不到 spring自定义目录 BOOT-INF的类
 
-# 四、最终方案
+## 四、最终方案
 
 1. 方案一：不使用 并行
 接口这边批量不会特别大，并且是 操作Redis，就改回 普通stream
@@ -67,11 +67,11 @@ for (String msg : msgs) {
 }
 ```
 
-本文首先发布于 [https://www.890808.xyz/spring-boot-kafka-send-error-with-fork-join/](https://www.890808.xyz/spring-boot-kafka-send-error-with-fork-join/) ，其他平台需要审核更新慢一些。
+本文首先发布于 [https://www.890808.xyz/](https://www.890808.xyz/) ，其他平台需要审核更新慢一些。
 
 ![javalover123](https://img.890808.xyz/file/javalover123/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)
 
-五、参考链接
+## 五、参考链接
 
 [kafka消费者报错：Class org.apache.kafka.common.serialization.StringDeserializer could not be found._Jaming R的博客-CSDN博客](https://blog.csdn.net/yixiaoqi2010/article/details/88987929)
 

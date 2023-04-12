@@ -19,11 +19,11 @@ repost:
 
 <!--more-->
 
-# 一、前言
+## 一、前言
 
 ElasticSearch的Java客户端中，[spring-data-elasticsearch](https://github.com/spring-projects/spring-data-elasticsearch) 简化了 增删改、建索引等，没有简化 复杂查询 编码。[easy-es](https://www.easy-es.cn/) API 类似 Mybatis-Plus，大幅降低开发门槛，减少代码量，支持 自定义排序、权重、原生查询，留下了 广阔的调整空间
 
-# 二、Java客户端
+## 二、Java客户端
 
 - ~~[Java Transport Client](https://www.elastic.co/guide/en/elasticsearch/client/java-api/current/index.html)~~：官方已弃用，二进制协议，版本强绑定，不建议使用
 - ~~[Jest](https://github.com/searchbox-io/Jest)~~：4年多没发布新版本，不维护了，不建议使用
@@ -32,7 +32,7 @@ ElasticSearch的Java客户端中，[spring-data-elasticsearch](https://github.co
 - [spring-data-elasticsearch](https://github.com/spring-projects/spring-data-elasticsearch)：简化了 增删改、建索引等，没有简化 复杂查询 编码
 - [easy-es](https://www.easy-es.cn/)：API 类似 Mybatis-Plus，大幅降低开发门槛，减少代码量，支持 自定义排序、权重、原生查询，留下了 广阔的调整空间
 
-# 三、easy-es
+## 三、easy-es
 
 1. [MySQL和 easy-es 语法对比 | Easy-Es](https://www.easy-es.cn/pages/8f3438/)
    
@@ -160,10 +160,10 @@ ElasticSearch的Java客户端中，[spring-data-elasticsearch](https://github.co
    documentMapper.pageQuery(EsWrappers.lambdaQuery(Document.class).eq(Document::getTitle, "老汉"), 1, 20)
    ```
 
-# 四、总结
+## 四、总结
 
 [easy-es](https://www.easy-es.cn/)，大幅降低开发门槛，减少代码量，支持 自定义排序、权重、原生查询，留下了 广阔的调整空间
 
-本文首先发布于 [https://www.890808.xyz/easy-es-cover-elasticsearch/](https://www.890808.xyz/easy-es-cover-elasticsearch/)，其他平台需要审核更新慢一些。
+本文首先发布于 [https://www.890808.xyz/](https://www.890808.xyz/) ，其他平台需要审核更新慢一些。
 
 ![javalover123](https://img.890808.xyz/file/javalover123/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)
