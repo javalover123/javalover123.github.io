@@ -27,7 +27,7 @@ repost:
 
 ## 二、自动恢复、免费、低内存 文本编辑器
 - ~~Notepad++~~：作者发布不当言论，官方只支持 Windows平台，弃用多年了
-- [Sublime]([Sublime Text - Text Editing, Done Right](http://www.sublimetext.com/))：可免费试用，会提示 购买
+- [Sublime](http://www.sublimetext.com/)：可免费试用，会提示 购买
 - [notepad--](https://gitee.com/cxasm/notepad--)：是一个国产跨平台、简单的文本编辑器，是替换notepad++的一种选择。其内置强大的代码对比功能，让你丢掉付费的beyond compare。
 
 ## 三、总结
