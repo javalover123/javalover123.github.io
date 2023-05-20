@@ -14,7 +14,7 @@ lightgallery: true
 
 repost:
   enable: true
-  url: "https://www.890808.xyz/zh-cn/text-editor-ndd-notepad--/"
+  url: "https://www.890808.xyz/text-editor-ndd-notepad--/"
 ---
 
 <!--more-->

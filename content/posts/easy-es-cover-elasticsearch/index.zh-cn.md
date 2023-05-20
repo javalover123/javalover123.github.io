@@ -14,7 +14,7 @@ lightgallery: true
 
 repost:
   enable: true
-  url: "https://www.890808.xyz/zh-cn/easy-es-cover-elasticsearch/"
+  url: "https://www.890808.xyz/easy-es-cover-elasticsearch/"
 ---
 
 <!--more-->

@@ -14,7 +14,7 @@ lightgallery: true
 
 repost:
   enable: true
-  url: "https://www.890808.xyz/zh-cn/spring-boot-kafka-send-error-with-fork-join/"
+  url: "https://www.890808.xyz/spring-boot-kafka-send-error-with-fork-join/"
 ---
 
 <!--more-->
