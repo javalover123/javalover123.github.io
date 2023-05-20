@@ -2,7 +2,7 @@
 title: "Java annotation value use enum name"
 date: 2023-05-20T22:05:22+08:00
 draft: false
-description: "Java annotation value must be constant, but some case want to use enum name(eg. spring-cache use enum config cache, opertate cache need cache name)"
+description: "Java annotation value must be constant, but some case want to use enum name(eg. spring-cache use enum config cache, operate cache need cache name)"
 
 tags: ["Java"]
 categories: ["Java"]
@@ -18,7 +18,7 @@ repost:
 
 ## 1. Background
 - Java annotation value must be constant
-- But some case want to use enum name(eg. spring-cache use enum config cache, opertate cache need cache name)
+- But some case want to use enum name(eg. spring-cache use enum config cache, operate cache need cache name)
 
 ## 2. Plan
 - Plan 1: name property + external name interface
