@@ -21,7 +21,7 @@ repost:
 - 有些场景想把 枚举名称 设置为 注解的属性值(如 spring-cache 用枚举配置缓存，使用时 需要 缓存名称)
 
 ## 二、方案
-- 方案一：名称属性 + 外部名称接口
+### 方案一：名称属性 + 外部名称接口
 ```java
 @lombok.Getter
 @lombok.AllArgsConstructor
@@ -43,7 +43,7 @@ public interface CommonCacheConstant {
 ```
 使用：@Cacheable(cacheNames = CommonCacheConstant.QUOTE_LEVEL)
 
-- 方案二：名称属性 + 内部名称接口
+### 方案二：名称属性 + 内部名称接口
 ```java
 public enum CommonCacheConfig {
     QUOTE_LEVEL(Constant.QUOTE_LEVEL, 2);
@@ -58,7 +58,7 @@ public enum CommonCacheConfig {
 ```
 使用：@Cacheable(cacheNames = CommonCacheConfig.Constant.QUOTE_LEVEL)
 
-- 方案三：Lombok 的 FieldNameConstants
+### 方案三：Lombok 的 FieldNameConstants
 ```java
 @lombok.Getter
 @lombok.AllArgsConstructor

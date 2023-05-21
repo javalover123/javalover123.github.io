@@ -21,7 +21,7 @@ repost:
 - But some case want to use enum name(eg. spring-cache use enum config cache, operate cache need cache name)
 
 ## 2. Plan
-- Plan 1: name property + external name interface
+### Plan 1: name property + external name interface
 ```java
 @lombok.Getter
 @lombok.AllArgsConstructor
@@ -43,7 +43,7 @@ public interface CommonCacheConstant {
 ```
 Usage：@Cacheable(cacheNames = CommonCacheConstant.QUOTE_LEVEL)
 
-- Plan 2: name property + internal name interface
+### Plan 2: name property + internal name interface
 ```java
 public enum CommonCacheConfig {
     QUOTE_LEVEL(Constant.QUOTE_LEVEL, 2);
@@ -58,7 +58,7 @@ public enum CommonCacheConfig {
 ```
 Usage：@Cacheable(cacheNames = CommonCacheConfig.Constant.QUOTE_LEVEL)
 
-- Plan 3：Lombok's FieldNameConstants
+### Plan 3：Lombok's FieldNameConstants
 ```java
 @lombok.Getter
 @lombok.AllArgsConstructor
