@@ -52,6 +52,7 @@ repost:
 - 最长重启时间：initialDelaySeconds + (periodSeconds + timeoutSeconds) * failureThreshold + terminationGracePeriodSeconds(默认30秒)
 - 建议 适当调大 initialDelaySeconds(如 60)、failureThreshold(如 6)、periodSeconds(如 20)，总之根据上面的公式计算的时长 要大于 实际启动时长(如 本地测试)
 - [配置存活、就绪和启动探针 | Kubernetes](https://kubernetes.io/zh-cn/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
+- [kubernetes的三种探针startupprobe,ReadinessProbe,LivenessProbe记录 - 陈雷雷 - 博客园 (cnblogs.com)](https://www.cnblogs.com/superlinux/p/14933961.html)
 
 本文首先发布于 [https://www.890808.xyz/](https://www.890808.xyz/) ，其他平台需要审核更新慢一些。
 
