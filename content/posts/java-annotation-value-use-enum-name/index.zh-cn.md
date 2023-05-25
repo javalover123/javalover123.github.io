@@ -71,6 +71,18 @@ public enum CommonCacheConfig {
 
 }
 ```
+
+编译以后的代码多了自动生成的 CommonCacheConfig$Fields.class：
+```java
+public enum CommonCacheConfig implements ICacheConfig {
+
+    public static final class Fields {
+        public static final String QUOTE_LEVEL = "QUOTE_LEVEL";
+    }
+
+}
+```
+
 使用：@Cacheable(cacheNames = CommonCacheConfig.Fields.QUOTE_LEVEL)  
 注意：FieldNameConstants 的 onlyExplicitlyIncluded 需设置为 true，否则 按枚举的属性(如 ttl)生成，同时在 枚举项前加 @FieldNameConstants.Include
 

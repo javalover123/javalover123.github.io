@@ -45,7 +45,7 @@ repost:
 - 刚开始以为 80秒左右(14:38:52.249 到 14:40:11.817)，应用被重启了
 - 发现和 探针配置的不一样，initialDelaySeconds + periodSeconds * failureThreshold = 60秒
 - 然后发现最终结束时间应该是 14:40:22 登录主机: aaaa失败，就是 90秒左右
-- 最后发现还有个 terminationGracePeriodSeconds: 30，加上探针 60秒，刚好 90秒左右。至此终于 水落石出
+- 最后发现还有个 宽限时长 terminationGracePeriodSeconds: 30，加上探针 60秒，刚好 90秒左右。至此终于 水落石出
 - 建议运维把 initialDelaySeconds 改为 60 以后，成功启动
 
 ## 三、总结
