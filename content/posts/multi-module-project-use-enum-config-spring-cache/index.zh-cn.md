@@ -33,7 +33,7 @@ public interface ICacheConfig {
 }
 ```
 
-common模块缓存配置(使用 Lombok 的 FieldNameConstants 自动生成 常量)：
+common模块缓存配置(***使用 Lombok 的 FieldNameConstants 自动生成 常量***)：
 ```java
 @lombok.Getter
 @lombok.AllArgsConstructor
@@ -108,7 +108,7 @@ public enum CommonCacheConfig implements ICacheConfig {
 - 通过 Lombok 的 FieldNameConstants 自动生成 枚举名称常量，便于代码 导航、重构
 - 通过 Reflections 库，common模块自动加载 各模块的缓存配置，SimpleCacheManager 组合 各种不同配置的 缓存(CaffeineCacheManager 不能)，降低使用成本，提高可维护性
 - sync = true，加锁，只有一个线程去加载数据，其他线程阻塞，防止 缓存击穿
-- [alibaba/jetcache](https://github.com/alibaba/jetcache/blob/master/introduce_CN.md)：支持TTL和两级缓存、自动刷新和加载保护 等
+- [alibaba/jetcache](https://github.com/alibaba/jetcache/blob/master/introduce_CN.md)：支持 注解上指定过期时间等配置、两级缓存、自动刷新和加载保护 等
 - [netease-im/camellia](https://github.com/netease-im/camellia/blob/master/docs/cache/cache.md)：网易开源，有意思的是  支持基于注解执行mget，mevict等批量操作
 
 本文首先发布于 [https://www.890808.xyz/](https://www.890808.xyz/) ，其他平台需要审核更新慢一些。
