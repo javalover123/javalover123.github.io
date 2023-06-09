@@ -85,13 +85,18 @@ public class UniqueIdGeneratorTest {
     </dependencies>
 ```
 
-### 2 [配置](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parallel-execution-config)
+### 2 [配置项](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parallel-execution-config)
 - ***先设置 junit.jupiter.execution.parallel.enabled=true***
 - 全局并发测试：junit.jupiter.execution.parallel.mode.default=concurrent
 - 局部并发测试：@RepeatedTest 和 @Execution(CONCURRENT)
 - ***[按需配置并行策略 strategy](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parallel-execution-config)，建议 fixed，线程数 可控***
-- fixed 配置：如 fixed.parallelism=3，fixed.max-pool-size=3(默认 256 + parallelism)
-- dynamic策略(根据 factor、CPU核数 调整parallelism)，parallelism = max(1, factor * CPU核数)，后面和 fixed 逻辑一样
+- [fixed 配置：如 fixed.parallelism=3，fixed.max-pool-size=3(默认 256 + parallelism)](https://github.com/junit-team/junit5/blob/f58cd419755846f1476e8d15783438de8d7aede4/junit-platform-engine/src/main/java/org/junit/platform/engine/support/hierarchical/DefaultParallelExecutionConfigurationStrategy.java#L44)
+![junit5-fixed.png](https://img.890808.xyz/file/javalover123/2023/06/422bfec8970a12e6526e40dee50ebed5.png)
+
+- [dynamic策略(根据 factor、CPU核数 调整parallelism)，parallelism = max(1, factor * CPU核数)，后面和 fixed 逻辑一样](https://github.com/junit-team/junit5/blob/f58cd419755846f1476e8d15783438de8d7aede4/junit-platform-engine/src/main/java/org/junit/platform/engine/support/hierarchical/DefaultParallelExecutionConfigurationStrategy.java#L67)
+![junit5-dynamic.png](https://img.890808.xyz/file/javalover123/2023/06/edd7361ac51d4f17184847b2b152822b.png)
+
+### 3 [配置方式](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parallel-execution-config)
 - ***System properties 配置方式，更适合多模块项目(根pom.xml配置，子模块就不用配置了)***
 ```xml
             <plugin>
@@ -121,7 +126,7 @@ junit.jupiter.execution.parallel.config.fixed.parallelism=3
 junit.jupiter.execution.parallel.config.fixed.max-pool-size=3
 ```
 
-### 3. 使用
+### 4. 使用
 - [需改为 @RepeatedTest，和 普通测试不一致](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parallel-execution)
 - 测试对象 不同，ids属性 需加 static
 ```java
@@ -137,7 +142,7 @@ class UniqueIdGeneratorTest2 {
 }
 ```
 
-### 4. 效果
+### 5. 效果
 ![junit5.png](https://img.890808.xyz/file/javalover123/2023/06/a46900b7e5875b317a68d6798940f916.png)
 
 ## 四、总结
