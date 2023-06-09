@@ -1,5 +1,5 @@
 ---
-title: "Testng和Junit5多线程并发测试对比"
+title: "Testng和Junit5多线程并发测试实战"
 date: 2023-06-08T22:05:22+08:00
 draft: false
 description: "最近测试一个开源项目，发现生成的 全局id 有重复，也没有单元测试，就准备贡献个 PR。想到多线程并发测试，根据经验，第一想法是用 Testng，后面看了下 Junit5也有实验性支持了，就对比下(以 maven 为例)"
