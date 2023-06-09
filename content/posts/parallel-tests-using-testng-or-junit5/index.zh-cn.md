@@ -59,6 +59,7 @@ public class UniqueIdGeneratorTest {
 ### 1. 安装
 - 选择 使用数 比较多、也比较新 的版本，5.8.2。<junit-jupiter.version>5.8.2</junit-jupiter.version>
 - 最好通过 dependencyManagement 来统一版本，尤其是 多模块项目
+- 建议放到 spring-boot-dependencies 前面，优先级更高
 ```xml
     <dependencyManagement>
         <dependencies>
@@ -127,7 +128,7 @@ junit.jupiter.execution.parallel.config.fixed.max-pool-size=3
 ```
 
 ### 4. 使用
-- [需改为 @RepeatedTest，和 普通测试不一致](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parallel-execution)
+- [需改为 @RepeatedTest，和 普通测试不一致，并发线程数 是全局的](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parallel-execution)
 - 测试对象 不同，ids属性 需加 static
 ```java
 class UniqueIdGeneratorTest2 {
