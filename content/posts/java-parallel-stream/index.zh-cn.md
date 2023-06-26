@@ -69,7 +69,7 @@ data.parallelStream().forEach(d -> {
 参考 [concurrency - Custom thread pool in Java 8 parallel stream - Stack Overflow](https://stackoverflow.com/questions/21163108/custom-thread-pool-in-java-8-parallel-stream)
 - 方案一(各种情况都有效)
 ```java
-CompletableFuture.runAsync(runnable, new ForkJoinPool(2)).join()
+CompletableFuture.runAsync(list.parallelStream().forEach(), new ForkJoinPool(2)).join()
 ```
 
 - 方案二(***部分场景似乎没有效果***)
