@@ -24,7 +24,7 @@ repost:
 ### 1. 简介
 - 用来查找当前用户的 Java 进程，***而不能查找当前系统中其他用户的进程***
 - 相比 `Linux系统` 的 ps -ef | grep java，`Windows系统`的 tasklist | findstr java，`jps` 查找Java进程命令更简洁
-- ***列表里面会多一个 Jps的进程，每次进程号都不一样***
+- ***列表里面会多一个 Jps的进程，每次进程号都不一样***  
 ![jps.png](https://img.890808.xyz/file/javalover123/2023/07/jps.png)
 
 ### 2. jps：输出 进程号、应用主类名
