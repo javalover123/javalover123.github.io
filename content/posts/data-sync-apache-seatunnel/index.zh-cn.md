@@ -65,6 +65,7 @@ env {
 }
 ```
 
+- [MySQL 实时同步，需开启 binlog](https://debezium.io/documentation/reference/1.6/connectors/mysql.html#setting-up-mysql)
 - [添加 数据源 配置](https://seatunnel.apache.org/docs/2.3.1/connector-v2/source/MySQL-CDC#options)。result_table_name 取个 临时表名，便于后续使用。table-names 必须是 数据库.表名，base-url 必须指定 数据库。[startup.mode 默认是 INITIAL，先同步历史数据，后增量同步](https://github.com/apache/seatunnel/blob/3cd51b6defd3ddd3b011cf0f6b48f3c209bf9d22/seatunnel-connectors-v2/connector-cdc/connector-cdc-base/src/main/java/org/apache/seatunnel/connectors/cdc/base/option/StartupMode.java#L27)   
 ```
 source {
