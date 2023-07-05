@@ -25,7 +25,7 @@ repost:
 ## 二、[开源数据集成平台SeaTunnel](https://github.com/apache/seatunnel)
 ### 1. [简介](https://seatunnel.apache.org/docs/2.3.1/about)   
 - SeaTunnel 是 Apache 软件基金会下的一个高性能开源大数据集成工具，为数据集成场景提供灵活易用、易扩展并支持千亿级数据集成的解决方案。
-- Seaunnel 为实时(CDC)和批量数据提供高性能数据同步能力，已经在B站、腾讯云、字节等数百家公司使用。 
+- Seaunnel 为实时(CDC)和批量数据提供高性能数据同步能力，[支持十种以上数据源](https://seatunnel.apache.org/docs/2.3.1/Connector-v2-release-state)，已经在B站、腾讯云、字节等数百家公司使用。 
 - 可以选择 SeaTunnel Zeta 引擎上运行，也可以在 Apache Flink 或 Spark 引擎上运行。   
 ![seatunnel-architecture.png](https://img.890808.xyz/file/javalover123/2023/07/seatunnel-architecture.png)
 
@@ -46,14 +46,15 @@ Caused by: java.sql.SQLException: No suitable driver
 ```
 
 ### 3. [安装 connectors 插件](https://seatunnel.apache.org/docs/2.3.1/start-v2/locally/deployment#step-3-install-connectors-plugin)
-- 执行 bash bin/install-plugin.sh，国内建议先配置 `maven` 镜像，不然容易失败 或者 慢
+- ***执行 bash bin/install-plugin.sh，国内建议先配置 `maven` 镜像，不然容易失败 或者 慢***
 - 官方文档写着执行 sh bin/install-plugin.sh，我在 Ubuntu 20.04.2 LTS 上执行报错(bin/install-plugin.sh: 54: Bad substitution)，[我提了PR](https://github.com/apache/seatunnel-website/pull/253)   
 ![seatunnel-install-connectors-error.png](https://img.890808.xyz/file/javalover123/2023/07/seatunnel-install-connectors-error.png)
 
 
 ### 4. 编写配置文件
 - config 目录下，新建配置文件：如 mysql-es-test.conf
-- [添加 env 配置](https://seatunnel.apache.org/docs/2.3.1/start-v2/locally/quick-start-seatunnel-engine#step-2-add-job-config-file-to-define-a-job)。***因为是 实时同步，这里 job.mode = "STREAMING"***，execution.parallelism 是 并发数   
+- [添加 env 配置](https://seatunnel.apache.org/docs/2.3.1/start-v2/locally/quick-start-seatunnel-engine#step-2-add-job-config-file-to-define-a-job)
+***因为是 实时同步，这里 job.mode = "STREAMING"***，execution.parallelism 是 并发数   
 ```
 env {
   # You can set flink configuration here
@@ -66,7 +67,9 @@ env {
 ```
 
 - [MySQL 实时同步，需开启 binlog](https://debezium.io/documentation/reference/1.6/connectors/mysql.html#setting-up-mysql)
-- [添加 数据源 配置](https://seatunnel.apache.org/docs/2.3.1/connector-v2/source/MySQL-CDC#options)。result_table_name 取个 临时表名，便于后续使用。table-names 必须是 数据库.表名，base-url 必须指定 数据库。[startup.mode 默认是 INITIAL，先同步历史数据，后增量同步](https://github.com/apache/seatunnel/blob/3cd51b6defd3ddd3b011cf0f6b48f3c209bf9d22/seatunnel-connectors-v2/connector-cdc/connector-cdc-base/src/main/java/org/apache/seatunnel/connectors/cdc/base/option/StartupMode.java#L27)   
+- [添加 数据源 配置](https://seatunnel.apache.org/docs/2.3.1/connector-v2/source/MySQL-CDC#options)
+result_table_name 取个 临时表名，便于后续使用。***table-names 必须是 数据库.表名，base-url 必须指定 数据库。***   
+[startup.mode 默认是 INITIAL，先同步历史数据，后增量同步，详情点击](https://github.com/apache/seatunnel/blob/3cd51b6defd3ddd3b011cf0f6b48f3c209bf9d22/seatunnel-connectors-v2/connector-cdc/connector-cdc-base/src/main/java/org/apache/seatunnel/connectors/cdc/base/option/StartupMode.java#L27)   
 ```
 source {
   MySQL-CDC {
@@ -80,7 +83,8 @@ source {
 }
 ```
 
-- [添加 转换 配置，sql 比较灵活](https://seatunnel.apache.org/docs/2.3.1/transform-v2/sql#options)。[函数列表请点击](https://seatunnel.apache.org/docs/2.3.1/transform-v2/sql-functions)   
+- [添加 转换 配置，sql 比较灵活](https://seatunnel.apache.org/docs/2.3.1/transform-v2/sql#options)。
+[函数列表请点击](https://seatunnel.apache.org/docs/2.3.1/transform-v2/sql-functions)   
 ```
 transform {
   Sql {
@@ -90,7 +94,8 @@ transform {
 }
 ```
 
-- [添加 输出 配置](https://seatunnel.apache.org/docs/2.3.1/connector-v2/sink/Elasticsearch#options)，CDC 实时同步 es，必须配置 primary_keys   
+- [添加 输出 配置](https://seatunnel.apache.org/docs/2.3.1/connector-v2/sink/Elasticsearch#options)
+***CDC 实时同步 es，必须配置 primary_keys***   
 ```
 sink {
     Elasticsearch {
@@ -110,6 +115,7 @@ sink {
 
 
 ### 5. [启动任务](https://seatunnel.apache.org/docs/2.3.1/start-v2/locally/quick-start-seatunnel-engine#step-3-run-seatunnel-application)   
+[这里以 本地模式为例](https://seatunnel.apache.org/docs/2.3.1/seatunnel-engine/local-mode)，另有 [集群](https://seatunnel.apache.org/docs/2.3.1/seatunnel-engine/deployment)、spark、flink 模式。   
 ```shell
 ./bin/seatunnel.sh -e local --config ./config/mysql-es-test.conf
 ```
