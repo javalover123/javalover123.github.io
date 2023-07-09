@@ -31,7 +31,7 @@ repost:
 
 ### 2. jstat -gcutil
 - 常用命令格式：jstat -gcutil 进程号 持续输出间隔毫秒数，下图每隔 1000毫秒输出一次
-- ***前6列 输出各个内存区域使用百分比 (没有容量大小)***，依次是 幸存区survivor0、1、新生代Eden、老年代Old、元数据 Metaspace、Compressed class space
+- 前6列 输出各个内存区域使用百分比 (没有容量大小)，依次是 幸存区survivor0、1、新生代Eden、老年代Old、元数据 Metaspace、Compressed class space
 - GC 结尾的列 表示 GC次数，GCT 结尾的 表示 GC耗时，依次是 Young GC 次数和耗时、Full GC、Compressed class space GC，最后一列 GCT 是 Total总GC耗时
 - 2次相邻的GC，可以快速判断那一次GC的耗时；GCT / GC = 平均每次GC耗时
 - GC是否频繁标准参考：Young GC执行迅速(50毫秒以内)、Young GC执行不频繁(间隔10秒左右一次)、Full GC执行迅速(1秒以内)、Full GC执行不频繁(间隔10分钟左右一次)   
