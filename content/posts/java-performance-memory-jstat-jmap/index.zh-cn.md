@@ -1,5 +1,5 @@
 ---
-title: "Java程序性能分析：jstat & jmap"
+title: "Java程序性能分析：内存"
 date: 2023-07-09T11:05:22+08:00
 draft: false
 description: "开发Java项目过程中，难免会碰到一些 性能 问题，这时候就需要一些工具，帮忙排查。本文主要介绍 JDK自带的工具 jstat、jmap，另简单介绍 MAT、gceasy、HeapDump 等"
@@ -11,21 +11,21 @@ lightgallery: true
 
 repost:
   enable: true
-  url: "https://www.890808.xyz/java-performance-jstat-jmap/"
+  url: "https://www.890808.xyz/java-performance-memory-jstat-jmap/"
 ---
 
 <!--more-->
 
 ## 一、前言
 - 开发Java项目过程中，难免会碰到一些 性能 问题，这时候就需要一些工具，帮忙排查
-- 本文主要介绍 JDK自带的工具 jstat、jmap，另简单介绍 MAT、gceasy、HeapDump 等
+- 本文主要介绍 JDK自带的工具 jstat、jmap，用于分析内存问题，另简单介绍 MAT、gceasy、HeapDump 等
 - 以 openjdk 11.0.13、G1 垃圾收集器、Linux系统 为例
 
 ## 二、GC分析：jstat
 ### 1. [jstat 简介](https://docs.oracle.com/en/java/javase/11/tools/jstat.html)
 - jstat 全称 “Java Virtual Machine statistics monitoring tool”，位于 JDK 的 bin 目录下，用于对 Java 程序的资源和性能进行监控，包括 Heap size、垃圾回收状况 等。
+- jstat --help：查看命令帮助
 - jstat -options：返回有哪些命令选项，如 -gcutil、-gc、-gccapacity、-gccause，另有 -class、-compiler、-printcompilation 等
-- jstat --help：查看命令格式。
 - `jstat 上一步输出的命令选项 [-t] [-h每几行输出标题行] 进程号 [持续输出间隔时长 [输出次数]]`
 - 持续输出间隔时长 默认毫秒，数字后面加 `s` 单位改为秒，`-t` 表示每行开头输出 相对应用启动时间的Timestamp 时间戳
 
