@@ -2,7 +2,7 @@
 title: "Java程序性能分析：内存"
 date: 2023-07-09T11:05:22+08:00
 draft: false
-description: "开发Java项目过程中，难免会碰到一些 性能 问题，这时候就需要一些工具，帮忙排查。本文主要介绍 JDK自带的工具 jstat、jmap，另简单介绍 MAT、gceasy、HeapDump 等"
+description: "开发Java项目过程中，难免会碰到一些 性能 问题，这时候就需要一些工具，帮忙排查。本文主要介绍 JDK自带的上古神器 jstat、jmap，另简单介绍 MAT、gceasy、HeapDump 等"
 
 tags: ["Java","性能"]
 categories: ["Java","性能"]
@@ -18,7 +18,7 @@ repost:
 
 ## 一、前言
 - 开发Java项目过程中，难免会碰到一些 性能 问题，这时候就需要一些工具，帮忙排查
-- 本文主要介绍 JDK自带的工具 jstat、jmap，用于分析内存问题，另简单介绍 MAT、gceasy、HeapDump 等
+- 本文主要介绍 JDK自带的上古神器 jstat、jmap，用于分析内存问题，另简单介绍 MAT、gceasy、HeapDump 等
 - 以 openjdk 11.0.13、G1 垃圾收集器、Linux系统 为例
 
 ## 二、GC分析：jstat
