@@ -71,8 +71,10 @@ jmap 可以 快速分析简单的内存占用，生成 dump文件 便于后续�
 ## 四、其他内存分析工具
 ### 1. [MAT](https://www.eclipse.org/mat/)：免费经典的dump分析工具
 - MAT 全称 Eclipse Memory Analysis Tools，是一个分析 Java 堆数据的专业工具，可以计算出内存中对象的实例数量、占用空间大小、引用关系等，看看是谁阻止了垃圾收集器的回收工作，从而定位内存泄漏的原因。
-- 建议配置略大于 dump文件大小的内存，否则可能报错，编辑 MemoryAnalyzer.ini 添加 -vmargs – Xmx4g
+- 建议配置略大于 dump文件大小的内存，否则可能报错，编辑 MemoryAnalyzer.ini 添加 `-vmargs – Xmx4g`   
+
 ### 2. [gceasy.io](https://gceasy.io/)：国外的在线分析工具
+
 ### 3. [HeapDump社区](https://memory.console.heapdump.cn/)
 阿里大神创业的产品，除了工具，还有不少性能方面的案例
 
