@@ -2,7 +2,7 @@
 title: "HTTP接口性能压力测试"
 date: 2023-07-18T11:05:22+08:00
 draft: false
-description: ""
+description: "开发接口以后，对性能有要求的 接口，需要做 性能压力测试。常见免费的如：经典的 ab，性能不太好的 jmeter、siege(有时候都怀疑程序性能不行了)，另介绍 hey、k6、vegeta、wrk"
 
 tags: ["http","性能","测试"]
 categories: ["http","性能"]

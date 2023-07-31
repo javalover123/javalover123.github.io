@@ -102,7 +102,6 @@ sink {
         hosts = ["host:9200"]
         username = "elastic"
         password = "pwd"
-
         index = "index_t1"
         # cdc required options
         primary_keys = ["id"]
