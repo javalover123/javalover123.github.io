@@ -50,22 +50,22 @@ repost:
 - 支持保存 多个集群连接信息，重启浏览器重新连接 也不用输入 用户名、密码，更方便了
 - 主要分为：概览、数据浏览、基础搜索、高级搜索、设置，以及右上角的 信息
 
-- 概览
+- 概览  
 支持 索引名称、状态 筛选，按 名称、大小、文档数量 正序、倒序 排列，**排查大索引 更方便了呀**
 
-- 数据浏览
+- 数据浏览  
 **输入类似SQL的 查询条件、排序，有时候更高效。** 还用 `_id=null` 排查过数据同步的问题。  
 ![es-client-setting-browser.png](https://img.890808.xyz/file/javalover123/2023/08/es-client-setting-browser.png)
 
-- 基础搜索
+- 基础搜索  
 **查询条件、排序 支持禁用，便于调整。**  
 ![es-client-setting-basic-search.png](https://img.890808.xyz/file/javalover123/2023/08/es-client-setting-basic-search.png)
 
-- 高级搜索
-**注意：输入请求内容，才显示 执行 按钮**
+- 高级搜索  
+**注意：输入请求内容，才显示 执行 按钮**  
 ![es-client-setting-adv-search.png](https://img.890808.xyz/file/javalover123/2023/08/es-client-setting-adv-search.png)
 
-- 设置
+- 设置  
 支持 排除指定索引，显示指定索引，[本人贡献的PR](https://gitee.com/qiaoshengda/es-client/pulls/2)，索引比较多 而 关注的索引不多时，可以大幅降低 干扰  
 ![es-client-setting-basic.png](https://img.890808.xyz/file/javalover123/2023/08/es-client-setting-basic.png)
 
