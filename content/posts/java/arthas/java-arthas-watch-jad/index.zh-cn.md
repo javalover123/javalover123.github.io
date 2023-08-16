@@ -11,7 +11,7 @@ lightgallery: true
 
 repost:
   enable: true
-  url: "https://www.890808.xyz/java/arthas/java-arthas-watch-jad"
+  url: "https://www.890808.xyz/java-arthas-watch-jad"
 ---
 
 <!--more-->
