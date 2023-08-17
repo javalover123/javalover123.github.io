@@ -17,8 +17,8 @@ repost:
 <!--more-->
 
 ## 一、前言  
-- Java项目中，测试环境 难免会碰到一些问题，这时候就需要一些工具，帮忙排查
-- 本文开篇主要介绍 阿里开源的诊断工具Arthas 3.7.0版本，watch、jad、classloader 命令，以 Debian 11、openjdk 11 为例
+- 还在为排查Java程序线上问题头痛吗，看我们用阿里开源的诊断神器 Arthas 来帮您
+- 本文开篇主要介绍 阿里开源的诊断神器Arthas 3.7.0版本，watch、jad、classloader 命令，以 Debian 11、openjdk 11 为例
 
 ## 二、Arthas 简介和安装  
 1. [简介](https://arthas.aliyun.com/doc/)  
@@ -56,7 +56,7 @@ curl -O https://arthas.aliyun.com/arthas-boot.jar && java -jar arthas-boot.jar
 
 4. 重载方法
 - 重载方法，可通过参数 个数、类型 筛选
-- 命令格式：`watch 类全名 方法名 {观察表达式} 'params.length== 参数个数 && params[0] instanceof java.lang.String'
+- 命令格式：`watch 类全名 方法名 {观察表达式} 'params.length== 参数个数 && params[0] instanceof java.lang.String`  
 ![arthas-watch-overload.png](https://img.890808.xyz/file/javalover123/2023/08/arthas-watch-overload.png)
 
 5. 实现类 和 代理类 输出2次  
