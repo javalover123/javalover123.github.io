@@ -66,12 +66,12 @@ curl -O https://arthas.aliyun.com/arthas-boot.jar && java -jar arthas-boot.jar
 
 6. 观察异常  
 - 4 个观察事件点，即 -b 函数调用前，-e 函数异常后，-s 函数返回后，-f 函数结束后(默认)
-- 命令格式：`watch 类全名 方法名 {throwExp} '条件' -e`  
+- 命令格式：`watch 类全名 方法名 {throwExp} -e`  
 ![arthas-watch-exception.png](https://img.890808.xyz/file/javalover123/2023/08/arthas-watch-exception.png)
 
 7. 观察函数调用前的入参  
 - 这种情况比较少，一般是 入参、出参 是同一个 集合 或 对象，方法中修改了 内容
-- 命令格式：`watch 类全名 方法名 {观察表达式} -b`，观察表达式 中 returnObj 是 null 哦  
+- 命令格式：`watch 类全名 方法名 {观察表达式} -b`，观察表达式 中 returnObj 是 null 哦，因为还没执行完返回  
 
 ## 四、拓展  
 1. 怀疑代码不一致，[jad 反编译 确认一下吧](https://arthas.aliyun.com/doc/jad.html)  
