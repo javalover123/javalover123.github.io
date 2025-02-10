@@ -40,7 +40,7 @@ common模块缓存配置(***使用 Lombok 的 FieldNameConstants 自动生成 �
 @lombok.experimental.FieldNameConstants(onlyExplicitlyIncluded = true)
 public enum CommonCacheConfig implements ICacheConfig {
 
-    @FieldNameConstants.Include QUOTE_LEVEL(1000, 2);
+    @FieldNameConstants.Include QUOTE_LEVEL(2);
 
     private final Integer ttl;
 
@@ -54,7 +54,7 @@ public enum CommonCacheConfig implements ICacheConfig {
 @lombok.experimental.FieldNameConstants(onlyExplicitlyIncluded = true)
 public enum QuoteServiceCacheConfig implements ICacheConfig {
 
-    @FieldNameConstants.Include HOT_STOCK(1000, 30);
+    @FieldNameConstants.Include HOT_STOCK(30);
 
     private final Integer ttl;
 
