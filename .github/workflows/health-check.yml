@@ -21,7 +21,7 @@ jobs:
 
     steps:
     - name: check index
-      run: curl "https://www.890808.xyz/" | wc -l && curl "https://890808.xyz/" | wc -l
+      run: curl -s "https://www.890808.xyz/" | wc -l && curl -s "https://890808.xyz/" | wc -l
 
     - name: check sub
-      run: curl "https://ai.890808.xyz/" | wc -l && curl "https://oner.890808.xyz/" | wc -l
+      run: curl -s "https://ai.890808.xyz/" | wc -l && curl -s "https://oner.890808.xyz/" | wc -l
