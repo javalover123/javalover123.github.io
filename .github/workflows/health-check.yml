@@ -10,18 +10,18 @@ on:
     branches: [ main ]
   # schedule 事件允许您在计划的时间触发工作流程
   schedule:
-    # 设置 UTC 时间每天 0:00 自动触发即中国 8:00，github有误差大概在 8:15 左右触发;有需要可以自行更改此文件调整时间
+    # 设置 UTC 时间每小时 3、21、39、57 自动触发，github有误差大概在 15 分钟左右触发;有需要可以自行更改此文件调整时间
     # POSIX cron 语法，只有五个域：分 时 日 月 周
     # https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07
-    - cron:  0 3/18 * * *  
+    - cron: 3/18 * * * * 
 
 jobs:
   health-check:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: check index
-      run: curl "https://www.890808.xyz/" && curl "https://890808.xyz/"
+      run: curl "https://www.890808.xyz/" | wc -l && curl "https://890808.xyz/" | wc -l
 
     - name: check sub
-      run: curl "https://ai.890808.xyz/" && curl "https://oner.890808.xyz/"
+      run: curl "https://ai.890808.xyz/" | wc -l && curl "https://oner.890808.xyz/" | wc -l
