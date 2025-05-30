@@ -326,9 +326,9 @@ enableEmoji = true
         identifier = "tests"
         pre = ""
         post = ""
-        name = "测试"
-        url = "/tests/"
-        title = "FixIt 测试"
+        name = "AI大模型网关"
+        url = "https://ai.890808.xyz"
+        title = "AI人工智能大模型网关"
         weight = 5
         [languages.zh-cn.menu.main.params]
           draft = false

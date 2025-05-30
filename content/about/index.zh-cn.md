@@ -17,6 +17,8 @@ math:
 
 [基于Apache SeaTunnel的MySQL到Elasticsearch实时同步解决方案_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1eQ4y1b7fQ/)
 
+[基于 Apache SeaTunnel的 MySQL 到 Elasticsearch 实时同步解决方案_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Uz4y1V7bf/)
+
 ![Apache SeaTunnel 贡献证书](https://img.890808.xyz/file/javalover123/2025/03/mmexport1741962293091.jpg)
 
 ![Dromara Easy-Es 贡献证书](https://img.890808.xyz/file/javalover123/2025/03/mmexport1741962295876.jpg)
