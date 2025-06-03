@@ -42,7 +42,7 @@ repost:
 - 看名字就知道，是支持保存 多个集群连接信息的 Head 了
 - 字体可能偏小，可以改插件的 css样式调整
 - es有密码的情况下，每次重启浏览器以后，重新连接都需要输入 用户名、密码  
-![Multi-Elasticsearch-Head-overview.png](https://img.890808.xyz/file/javalover123/2023/08/Multi-Elasticsearch-Head-overview.png)
+![Multi-Elasticsearch-Head-overview.png](https://img.890808.xyz/2023/08/Multi-Elasticsearch-Head-overview.png)
 
 ## 四、[es-client](https://gitee.com/qiaoshengda/es-client)
 - 数据浏览、基础查询 功能好用，开源免费，作者响应也比较及时
@@ -55,19 +55,19 @@ repost:
 
 - 数据浏览  
 **输入类似SQL的 查询条件、排序，有时候更高效。** 还用 `_id=null` 排查过数据同步的问题。  
-![es-client-setting-browser.png](https://img.890808.xyz/file/javalover123/2023/08/es-client-setting-browser.png)
+![es-client-setting-browser.png](https://img.890808.xyz/2023/08/es-client-setting-browser.png)
 
 - 基础搜索  
 **查询条件、排序 支持禁用，便于调整。**  
-![es-client-setting-basic-search.png](https://img.890808.xyz/file/javalover123/2023/08/es-client-setting-basic-search.png)
+![es-client-setting-basic-search.png](https://img.890808.xyz/2023/08/es-client-setting-basic-search.png)
 
 - 高级搜索  
 **注意：输入请求内容，才显示 执行 按钮**  
-![es-client-setting-adv-search.png](https://img.890808.xyz/file/javalover123/2023/08/es-client-setting-adv-search.png)
+![es-client-setting-adv-search.png](https://img.890808.xyz/2023/08/es-client-setting-adv-search.png)
 
 - 设置  
 支持 排除指定索引，显示指定索引，[本人贡献的PR](https://gitee.com/qiaoshengda/es-client/pulls/2)，索引比较多 而 关注的索引不多时，可以大幅降低 干扰  
-![es-client-setting-basic.png](https://img.890808.xyz/file/javalover123/2023/08/es-client-setting-basic.png)
+![es-client-setting-basic.png](https://img.890808.xyz/2023/08/es-client-setting-basic.png)
 
 ## 五、总结
 - `es-client`、Head 更适合个人使用，其中 `es-client` 在 数据浏览、基础搜索、索引过滤 3方面明显更优，Head 在 集群健康度、索引分片副本分布 显示方面更好
@@ -76,4 +76,4 @@ repost:
 我的博客即将同步至腾讯云开发者社区，邀请大家一同入驻：<https://cloud.tencent.com/developer/support-plan?invite_code=2p6eldem07gg4>  
 **本文遵守[【CC BY-NC】协议，转载请保留原文出处及本版权声明，否则将追究法律责任。](https://creativecommons.org/licenses/by-nc/4.0/)**  
 ***本文首先发布于 [https://www.890808.xyz/](https://www.890808.xyz/) ，其他平台需要审核更新慢一些。***  
-![javalover123](https://img.890808.xyz/file/javalover123/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)
+![javalover123](https://img.890808.xyz/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)

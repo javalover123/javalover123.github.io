@@ -59,7 +59,7 @@ repost:
 
 ### 3. 性能测试效果
 - 所有的 PerfTest 结果都输出到 target/contiperf-report/index.html
-![ContiPerf.png](https://img.890808.xyz/file/javalover123/2023/06/f5eab981d4d05ad0f01a824f55dc8cc4.png)
+![ContiPerf.png](https://img.890808.xyz/2023/06/f5eab981d4d05ad0f01a824f55dc8cc4.png)
 
 ### 4. 示例2：多线程生成id，有无重复校验
 - ids 要使用 支持并发的容器，不然多线程 会报错
@@ -85,4 +85,4 @@ repost:
 **本文遵守[【CC BY-NC】协议，转载请保留原文出处及本版权声明，否则将追究法律责任。](https://creativecommons.org/licenses/by-nc/4.0/)**   
 ***本文首先发布于 [https://www.890808.xyz/](https://www.890808.xyz/) ，其他平台需要审核更新慢一些。***
 
-![javalover123](https://img.890808.xyz/file/javalover123/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)
+![javalover123](https://img.890808.xyz/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)

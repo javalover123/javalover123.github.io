@@ -53,7 +53,7 @@ public class UniqueIdGeneratorTest {
 ```
 
 ### 3. 效果
-![testng.png](https://img.890808.xyz/file/javalover123/2023/06/2794bd5249788bc70c764d5ce2cdf152.png)
+![testng.png](https://img.890808.xyz/2023/06/2794bd5249788bc70c764d5ce2cdf152.png)
 
 ## 三、[Junit5](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parallel-execution)
 ### 1. 安装
@@ -92,10 +92,10 @@ public class UniqueIdGeneratorTest {
 - 局部并发测试：@RepeatedTest 和 @Execution(CONCURRENT)
 - ***[按需配置并行策略 strategy](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parallel-execution-config)，建议 fixed，线程数 可控***
 - [fixed 配置：如 fixed.parallelism=3，fixed.max-pool-size=3(默认 256 + parallelism)](https://github.com/junit-team/junit5/blob/f58cd419755846f1476e8d15783438de8d7aede4/junit-platform-engine/src/main/java/org/junit/platform/engine/support/hierarchical/DefaultParallelExecutionConfigurationStrategy.java#L44)
-![junit5-fixed.png](https://img.890808.xyz/file/javalover123/2023/06/422bfec8970a12e6526e40dee50ebed5.png)
+![junit5-fixed.png](https://img.890808.xyz/2023/06/422bfec8970a12e6526e40dee50ebed5.png)
 
 - [dynamic策略(根据 factor、CPU核数 调整parallelism)，parallelism = max(1, factor * CPU核数)，后面和 fixed 逻辑一样](https://github.com/junit-team/junit5/blob/f58cd419755846f1476e8d15783438de8d7aede4/junit-platform-engine/src/main/java/org/junit/platform/engine/support/hierarchical/DefaultParallelExecutionConfigurationStrategy.java#L67)
-![junit5-dynamic.png](https://img.890808.xyz/file/javalover123/2023/06/edd7361ac51d4f17184847b2b152822b.png)
+![junit5-dynamic.png](https://img.890808.xyz/2023/06/edd7361ac51d4f17184847b2b152822b.png)
 
 ### 3 [配置方式](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parallel-execution-config)
 - ***System properties 配置方式，更适合多模块项目(根pom.xml配置，子模块就不用配置了)***
@@ -144,7 +144,7 @@ class UniqueIdGeneratorTest2 {
 ```
 
 ### 5. 效果
-![junit5.png](https://img.890808.xyz/file/javalover123/2023/06/a46900b7e5875b317a68d6798940f916.png)
+![junit5.png](https://img.890808.xyz/2023/06/a46900b7e5875b317a68d6798940f916.png)
 
 ## 四、总结
 - 多线程并发测试 场景，[Testng](https://testng.org/doc/documentation-main.html#parallel-tests) 可能比 [Junit5](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parallel-execution) 更合适
@@ -153,4 +153,4 @@ class UniqueIdGeneratorTest2 {
 **本文遵守[【CC BY-NC】协议，转载请保留原文出处及本版权声明，否则将追究法律责任。](https://creativecommons.org/licenses/by-nc/4.0/)**   
 ***本文首先发布于 [https://www.890808.xyz/](https://www.890808.xyz/) ，其他平台需要审核更新慢一些。***
 
-![javalover123](https://img.890808.xyz/file/javalover123/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)
+![javalover123](https://img.890808.xyz/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)

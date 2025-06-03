@@ -35,19 +35,19 @@ repost:
 - GC 结尾的列 表示 GC次数，GCT 结尾的 表示 GC耗时，依次是 Young GC 次数和耗时、Full GC、Compressed class space GC，最后一列 GCT 是 Total总GC耗时
 - 2次相邻的GC，可以快速判断那一次GC的耗时；GCT / GC = 平均每次GC耗时
 - GC是否频繁标准参考：Young GC执行迅速(50毫秒以内)、Young GC执行不频繁(间隔10秒左右一次)、Full GC执行迅速(1秒以内)、Full GC执行不频繁(间隔10分钟左右一次)   
-![jstat-gcutil.png](https://img.890808.xyz/file/javalover123/2023/07/jstat-gcutil.png)
+![jstat-gcutil.png](https://img.890808.xyz/2023/07/jstat-gcutil.png)
 
 ### 3. jstat -gc
 - 列出 各区域的容量Capacity、使用大小 Utilization，单位是 KB，***有容量大小，没有百分比***
 - YGC 开始，是各区域 GC次数、耗时   
-![jstat-gc.png](https://img.890808.xyz/file/javalover123/2023/07/jstat-gc.png)
+![jstat-gc.png](https://img.890808.xyz/2023/07/jstat-gc.png)
 
 ### 4. jstat -gccapacity
 - 主要关注 各区域 最小(Min，MN结尾)、最大(Max，MX结尾)、当前(Capacity，C结尾) 容量 capacity
 - 最后3列 YGC、FGC、CGC 分别是 Young、Full、Compressed class space 区域 GC次数
 - NGCMN 是 新生代最小容量 new generation capacity min
 - 各个分区的容量，单位是 KB   
-![jstat-gccapacity.png](https://img.890808.xyz/file/javalover123/2023/07/jstat-gccapacity.png)
+![jstat-gccapacity.png](https://img.890808.xyz/2023/07/jstat-gccapacity.png)
 
 ## 三、内存分析：jmap
 ### 1. [jmap 简介](https://docs.oracle.com/en/java/javase/11/tools/jmap.html)
@@ -56,7 +56,7 @@ jmap 可以 快速分析简单的内存占用，生成 dump文件 便于后续�
 ### 2. jmap -histo
 - 快速检测明显的内存问题(看不出来问题，可以下一步 jmap -dump)
 - 命令格式：jmap -histo 进程号，***建议后面加 ` | head -行数`，不然就等着刷屏吧***    
-![jmap-histo.png](https://img.890808.xyz/file/javalover123/2023/07/jmap-histo.png)
+![jmap-histo.png](https://img.890808.xyz/2023/07/jmap-histo.png)
 
 
 ### 3. jmap -dump
@@ -65,7 +65,7 @@ jmap 可以 快速分析简单的内存占用，生成 dump文件 便于后续�
 - GC以后再 dump，可以确定是不是还没有触发GC，内存占用才高，格式是在 `-dump:` 后面增加 `live,`
 - dump文件如果在服务器，建议压缩以后在传输，如下图 文件大小降低70%
 - 如果是在远程容器里面，下载到本地可能报错，压缩 + 重试 大概率能解决   
-![jmap-dump.png](https://img.890808.xyz/file/javalover123/2023/07/jmap-dump.png)
+![jmap-dump.png](https://img.890808.xyz/2023/07/jmap-dump.png)
 
 
 ## 四、其他内存分析工具
@@ -86,4 +86,4 @@ jmap 可以 快速分析简单的内存占用，生成 dump文件 便于后续�
 **本文遵守[【CC BY-NC】协议，转载请保留原文出处及本版权声明，否则将追究法律责任。](https://creativecommons.org/licenses/by-nc/4.0/)**   
 ***本文首先发布于 [https://www.890808.xyz/](https://www.890808.xyz/) ，其他平台需要审核更新慢一些。***
 
-![javalover123](https://img.890808.xyz/file/javalover123/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)
+![javalover123](https://img.890808.xyz/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)

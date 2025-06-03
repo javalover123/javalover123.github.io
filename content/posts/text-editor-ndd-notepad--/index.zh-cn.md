@@ -32,11 +32,11 @@ repost:
 
 ## 三、总结
 
-![image-20230412165152902](https://img.890808.xyz/file/javalover123/2023/04/f6d1e6d0be8c0f6882b3aa81aaf2b0d4.png)
+![image-20230412165152902](https://img.890808.xyz/2023/04/f6d1e6d0be8c0f6882b3aa81aaf2b0d4.png)
 
 - 基本满足需求，暂时没几个插件
 - 捐赠可获取注册码(不捐赠也可以 免费永久试用，也不会提示购买)，[ndd：notepad--](https://gitee.com/cxasm/notepad--) 页面底部捐赠有记录
 
 本文首先发布于 [https://www.890808.xyz/](https://www.890808.xyz/) ，其他平台需要审核更新慢一些。
 
-![javalover123](https://img.890808.xyz/file/javalover123/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)
+![javalover123](https://img.890808.xyz/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)

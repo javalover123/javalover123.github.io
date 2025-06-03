@@ -27,7 +27,7 @@ repost:
 - SeaTunnel 是 Apache 软件基金会下的一个高性能开源大数据集成工具，为数据集成场景提供灵活易用、易扩展并支持千亿级数据集成的解决方案。
 - Seaunnel 为实时(CDC)和批量数据提供高性能数据同步能力，[支持十种以上数据源](https://seatunnel.apache.org/docs/2.3.1/Connector-v2-release-state)，已经在B站、腾讯云、字节等数百家公司使用。 
 - 可以选择 SeaTunnel Zeta 引擎上运行，也可以在 Apache Flink 或 Spark 引擎上运行。   
-![seatunnel-architecture.png](https://img.890808.xyz/file/javalover123/2023/07/seatunnel-architecture.png)
+![seatunnel-architecture.png](https://img.890808.xyz/2023/07/seatunnel-architecture.png)
 
 
 ### 2. [安装](https://seatunnel.apache.org/docs/2.3.1/start-v2/locally/deployment#step-1-prepare-the-environment)
@@ -48,7 +48,7 @@ Caused by: java.sql.SQLException: No suitable driver
 ### 3. [安装 connectors 插件](https://seatunnel.apache.org/docs/2.3.1/start-v2/locally/deployment#step-3-install-connectors-plugin)
 - ***执行 bash bin/install-plugin.sh，国内建议先配置 `maven` 镜像，不然容易失败 或者 慢***
 - 官方文档写着执行 sh bin/install-plugin.sh，我在 Ubuntu 20.04.2 LTS 上执行报错(bin/install-plugin.sh: 54: Bad substitution)，[我提了PR](https://github.com/apache/seatunnel-website/pull/253)   
-![seatunnel-install-connectors-error.png](https://img.890808.xyz/file/javalover123/2023/07/seatunnel-install-connectors-error.png)
+![seatunnel-install-connectors-error.png](https://img.890808.xyz/2023/07/seatunnel-install-connectors-error.png)
 
 
 ### 4. 编写配置文件
@@ -110,7 +110,7 @@ sink {
 ```
 
 - 最终配置截图   
-![seatunnel-mysql-cdc-es.png](https://img.890808.xyz/file/javalover123/2023/07/seatunnel-mysql-cdc-es.png)
+![seatunnel-mysql-cdc-es.png](https://img.890808.xyz/2023/07/seatunnel-mysql-cdc-es.png)
 
 
 ### 5. [启动任务](https://seatunnel.apache.org/docs/2.3.1/start-v2/locally/quick-start-seatunnel-engine#step-3-run-seatunnel-application)   
@@ -127,4 +127,4 @@ sink {
 **本文遵守[【CC BY-NC】协议，转载请保留原文出处及本版权声明，否则将追究法律责任。](https://creativecommons.org/licenses/by-nc/4.0/)**   
 ***本文首先发布于 [https://www.890808.xyz/](https://www.890808.xyz/) ，其他平台需要审核更新慢一些。***   
 
-![javalover123](https://img.890808.xyz/file/javalover123/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)
+![javalover123](https://img.890808.xyz/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)

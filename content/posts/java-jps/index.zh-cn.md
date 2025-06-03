@@ -25,7 +25,7 @@ repost:
 - 用来查找当前用户的 Java 进程，***而不能查找当前系统中其他用户的进程***
 - 相比 `Linux系统` 的 ps -ef | grep java，`Windows系统`的 tasklist | findstr java，`jps` 查找Java进程命令更简洁
 - ***列表里面会多一个 Jps的进程，每次进程号都不一样***   
-![jps.png](https://img.890808.xyz/file/javalover123/2023/07/jps.png)
+![jps.png](https://img.890808.xyz/2023/07/jps.png)
 
 ### 2. jps：输出 进程号、应用主类名
 不包含包名，有些类名不容易分辨是哪个服务的进程，如下第3个 Launcher
@@ -49,11 +49,11 @@ repost:
 
 ### 4. jps -m：多输出 jar 路径
 - 相比 jps，多输出 jar 路径  
-![jps-m.png](https://img.890808.xyz/file/javalover123/2023/07/jps-m.png)
+![jps-m.png](https://img.890808.xyz/2023/07/jps-m.png)
 
 ### 5. jps -v：多输出 启动参数
 - 相比 jps，多输出 启动参数  
-![jps-v.png](https://img.890808.xyz/file/javalover123/2023/07/jps-v.png)
+![jps-v.png](https://img.890808.xyz/2023/07/jps-v.png)
 
 ### 6. jps -V：输出 flag 文件的 JVM 参数
 - 输出通过 flag 文件传递到 JVM 中的参数(很少用到)
@@ -76,4 +76,4 @@ repost:
 **本文遵守[【CC BY-NC】协议，转载请保留原文出处及本版权声明，否则将追究法律责任。](https://creativecommons.org/licenses/by-nc/4.0/)**   
 ***本文首先发布于 [https://www.890808.xyz/](https://www.890808.xyz/) ，其他平台需要审核更新慢一些。***
 
-![javalover123](https://img.890808.xyz/file/javalover123/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)
+![javalover123](https://img.890808.xyz/2023/04/688b88cfd4ed9f6fcd56828b849ce47c.jpg)
