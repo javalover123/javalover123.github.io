@@ -2,7 +2,7 @@
 # See https://github.com/hugo-fixit/FixIt/issues/67
 
 prefix:
-  libFiles: https://unpkg.com/
+  libFiles: https://s4.zstatic.net/npm/
   # simple-icons@7.8.0 https://github.com/simple-icons/simple-icons
   simpleIcons: https://unpkg.com/simple-icons@7.8.0/icons/
 libFiles:
