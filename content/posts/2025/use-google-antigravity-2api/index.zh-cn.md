@@ -25,6 +25,8 @@ repost:
 ## 2. 解决部分账号 this account is ineligible to use Antigravity
 * [Antigravity-Manager](https://github.com/lbjlaq/Antigravity-Manager)
 本人有个多年老账号，登录提示 this account is ineligible to use Antigravity，使用大佬开源的工具，成功登录获取到模型配额，添加2个或以上账号后，在 `账号管理` 页面，点击 右侧操作里面的第2个按钮 `切换到此账号`，我本地的 Antigravity 成功登录了。开启 `API 反代` 后，在 `Cherry Studio` 成功使用。同时支持 多账号管理、切换 哦，今年新注册的账号，也有一部分用该工具能获取到模型配额
+![切换到此账号，成功登录 Antigravity](https://linux.do/uploads/default/original/4X/d/3/5/d35f32f21b6f31b77458b4d85475969377011106.png)
+
 * 详情参考 [「开源自荐」重构了一下 antigravity 切换账号工具 - 开发调优 - LINUX DO](https://linux.do/t/topic/1317411/1)
 
 # 二、本地客户端 转api
@@ -32,9 +34,14 @@ repost:
 只测试了 [Antigravity-Manager](https://github.com/lbjlaq/Antigravity-Manager)，详情参考 上面第2点
 
 # 三、服务器上 转api
+## [CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI)
+1. 前几天 谷歌大善人 提升2API检测强度，[Claude 模型不好用了，在站内看到佬说 CLIProxyAPI 已解决，或加提示词](https://linux.do/t/topic/1418638)
+2. 支持更多渠道 2API，安装好后管理页面地址是 `https://你的CLIProxyAPI访问链接/management.html`(建议和 2API授权用同一个浏览器，如 Antigravity 授权后，需复制 `http://localhost:51121/oauth-callback` 到管理页面，提交后才能成功)
+3. 详情参考 [没有VPS？教你零成本在ClawCloud上部署CLIProxyAPI - 资源荟萃 - LINUX DO](https://linux.do/t/topic/1033205)
+
 ## [deanxv/done-hub](https://github.com/deanxv/done-hub)
 1. 优点
-[Docker 镜像部署](https://github.com/su-kaka/gcli2api?tab=readme-ov-file#docker-%E7%8E%AF%E5%A2%83)简单，[文档提到了 远程部署时，用本地浏览器进行 OAuth授权 的解决方案](https://linux.do/t/topic/1342907)，授权成功后改域名端口然后回车。还有一点，2api后测试起来速度快(gemini-2.5-flash-lite 1.3秒左右)，稳定
+[Docker 部署，镜像换成 ghcr.io/deanxv/done-hub](https://one-hub-doc.vercel.app/deployment/#%E4%BD%BF%E7%94%A8-sqlite)简单，[文档提到了 远程部署时，用本地浏览器进行 OAuth授权 的解决方案](https://linux.do/t/topic/1342907)，授权成功后改域名端口然后回车。还有一点，2api后测试起来速度快(gemini-2.5-flash-lite 1.3秒左右)，稳定
 
 2. 多账号支持
 开启 批量添加，替换授权文件里面的换行，每行放一个授权文件内容。或者创建多个渠道，每个渠道一个账号
